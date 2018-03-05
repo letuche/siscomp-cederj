@@ -1,3 +1,4 @@
+/* Estilo básico */
 body {
     background-color: #EEEE33;
     color: #DD0000;
@@ -45,4 +46,17 @@ img.imgLogo {
 .apres {
     text-align: center;
     font-size: 18px;
+}
+/* Estilo da página Peças */
+.listaPecas {
+    color: #000066;
+    list-style-type: upper-roman;
+}
+.listaPecas ul {
+    list-style-image: url(img/Engrenagem.png);
+    line-height: 230%;
+}
+.listaPecas .preco {
+    color: #FF0000;
+    font-weight: bold;
 }

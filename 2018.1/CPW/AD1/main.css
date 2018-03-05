@@ -60,3 +60,42 @@ img.imgLogo {
     color: #FF0000;
     font-weight: bold;
 }
+/* Estilo da página Bicicletas */
+.tabBike {
+    border-collapse: collapse;
+    margin-top: 6px;
+    background-color: #FFCC44;
+    color: #000066;
+    font-family: Arial, Ubuntu;
+}
+.tabBike td, th {
+    border: 3px solid #226699;
+    padding: 6px 12px;
+}
+.titulo {
+    color: #FFFF00;
+    background-color: #228855;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.linTH {
+    color: #FFFFFF;
+    background-color: #22AA55;
+    vertical-align: middle;
+    text-align: center;
+}
+.colTH {
+    color: #FFFFFF;
+    background-color: #2299DD;
+    text-align: left;
+}
+.preco {
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.tabBike img {
+    width: 70px;
+    height: 70px;
+}

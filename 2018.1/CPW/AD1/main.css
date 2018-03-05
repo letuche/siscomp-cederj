@@ -1,0 +1,48 @@
+body {
+    background-color: #EEEE33;
+    color: #DD0000;
+    font-size: 16px;
+    font-family: Verdana, Liberation;
+}
+a:link {
+    color: #DD0000;
+    text-decoration: none;
+}
+a:visited {
+    color: #CC0000;
+    text-decoration: none;
+}
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+nav {
+    float: left;
+    display: block;
+    width: 20%;
+}
+nav ul {
+    list-style-image: url(img/Engrenagem.png);
+    margin-top: 40px;
+    line-height: 230%;
+}
+section {
+    display: block;
+    width: 77%;
+    float: right;
+}
+.ender {
+    float: right;
+    text-align: right;
+    font-size: 15px;
+    line-height: 140%;
+}
+img.imgLogo {
+    border-bottom: 3px solid;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+.apres {
+    text-align: center;
+    font-size: 18px;
+}

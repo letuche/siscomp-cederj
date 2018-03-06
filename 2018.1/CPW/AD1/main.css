@@ -104,6 +104,11 @@ form h3 {
     color: #000066;
     font-weight: bold;
 }
+.divLinha {
+    width: 480px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
 fieldset {
     margin: 20px 10px 0px 10px;
     width: 480px;
@@ -124,10 +129,8 @@ fieldset.fsDir {
     margin: 0px;
     width: auto;
 }
-div.divLinha {
-    width: 480px;
-    /* height: 25px; */
-    margin-bottom: 6px;
+.sub.divLinha {
+    display: inline;
 }
 .botoes {
     text-align: right;

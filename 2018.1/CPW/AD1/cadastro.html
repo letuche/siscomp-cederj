@@ -27,42 +27,54 @@
         <section>    
             <form method="post" action="mailto:lmonteiro@id.uff.br">
                 <h3>Cadastro</h3>
-                <div class="divLinha">
-                    <fieldset>
-                        <legend>Identificação</legend>
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <div class="divLinha">
                         <label class="colPri" for="email">E-mail: </label>
-                        <input class="inpGrande" type="email" id="email" name="email"><br><br>
+                        <input class="inpGrande" type="email" id="email" name="email">
+                    </div>
+                    <div class="divLinha">
                         <label class="colPri" for="senha">Senha: </label>
                         <input class="inpMedio" type="password" id="senha" name="senha">
                         <label for="confirme" style="margin-left:28px;">Confirme: </label>
                         <input class="elemDir inpMedio" type="password" id="confirme" name="confsenha">
-                    </fieldset>
-                </div>
-                <div class="divLinha">
-                    <fieldset>
-                        <legend>Dados Pessoais</legend>                        
+                    </div>
+                </fieldset>                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>                        
+                    <div class="divLinha">
                         <label class="colPri" for="nome">Nome: </label>
-                        <input class="inpGrande" type="text" id="nome" name="nome"><br><br>
+                        <input class="inpGrande" type="text" id="nome" name="nome">
+                    </div>
+                    <div class="divLinha">
                         <label class="colPri" for="endereco">Endereço: </label>
-                        <textarea type="text" id="endereco" name="endereco"></textarea><br><br>
+                        <textarea type="text" id="endereco" name="endereco"></textarea>
+                    </div>
+                    <div class="divLinha">
                         <label class="colPri" for="tel">Telefone: </label>
                         <input class="inpMedio" type="tel" id="tel" name="telefone">
                         <label for="cel" style="margin-left:30px;">Celular: </label>
-                        <input class="elemDir inpMedio" type="tel" id="cel" name="celular"><br><br>
-                        <fieldset class="fsEsq">
-                            <legend>Nascimento:</legend>
+                        <input class="elemDir inpMedio" type="tel" id="cel" name="celular">
+                    </div>
+                    <fieldset class="fsEsq">
+                        <legend>Nascimento:</legend>
+                        <div class="sub divLinha">
                             <input class="numDD" type="number" name="dianasc" size="2" min="01" max="31"> / 
                             <input class="numDD" type="number" name="mesnasc" size="2" min="01" max="12"> / 
                             <input class="numQD" type="number" name="anonasc" size="4" value="1980" min="1920" max="2000">
-                        </fieldset>
-                        <fieldset class="fsDir">
-                            <legend>Sexo:</legend>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fsDir">
+                        <legend>Sexo:</legend>
+                        <div class="sub divLinha">
                             <label for="sexo">Masculino</label>
                             <input type="radio" id="sexo" name="sexo" value="Masculino" checked>
                             <label for="sexo">Feminino</label>
                             <input type="radio" id="sexo" name="sexo" value="Feminino">
-                        </fieldset>
+                        </div>
                     </fieldset>
+                </fieldset>
+                <div class="divLinha">
                     <div class="botoes">
                         <input type="submit" name="enviar" value="Enviar">
                         <input type="reset" name="limpar" value="Limpar">

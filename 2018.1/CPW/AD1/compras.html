@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pedalarte</title>
+        <meta charset="utf-8">
+        <base target="_blank">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header>
+            <img class="imgLogo" src="img/PedalarTopo.png">                    
+            <address class="ender">
+                Av. Tour de France, 1903<br>
+                Tel: (21) 8765-4321<br>
+                <a href="mailto:contato@pedalarte.com.br">contato@pedalarte.com.br</a>
+            </address>
+        </header>        
+        <nav>
+            <ul>
+                <li><a href="main.html">Apresentação</a></li>
+                <li><a href="pecas.html">Peças</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="compras.html">Compras</a></li>
+            </ul>
+        </nav>
+        <section>    
+            <form id="compras" method="post" action="mailto:lmonteiro@id.uff.br">
+                <h3>Compras</h3>
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <div class="linhaCompras">
+                        <label class="colPriCompras" for="email">E-mail: </label>
+                        <input class="colPriCompras inpEmail" type="email" id="email" name="email">
+                        <label class="colPriCompras" for="senha" style="margin-left:25px;">Senha: </label>
+                        <input class="colPriCompras inpMedio" type="password" id="senha" name="senha">
+                    </div>
+                    <div class="linhaCompras">
+                        <a href="cadastro.html"><i><b>Se você ainda não tem cadastro, clique aqui!</b></i></a>
+                    </div>
+                </fieldset>                
+                <fieldset>
+                    <legend>Lista de Compras e Pagamento</legend>                        
+                    <div class="linhaCompras">
+                        Produtos:
+                    </div>
+                    <div class="sub linhaCompras">
+                        <select name="produtos">
+                            <option selected>-----</option>
+                            <optgroup label="Guidom">
+                                <option value="cb">Alumínio CB Reforçado Polido</option>
+                                <option value="speed">Alumínio Speed 31,8 X 420MM</option>
+                            </optgroup>
+                            <optgroup label="Selim">
+                                <option value="rsd">RAD 7 Comfort</option>
+                                <option value="serfas">SERFAS E-GEL DDMD-200</option>
+                            </optgroup>
+                            <optgroup label="Pedal">
+                                <option value="ingles">Inglês Alumínio</option>
+                            </optgroup>
+                            <optgroup label="Bicicleta">
+                                <option value="mtb">MTB A16 VOLT 1.6 PT/AM</option>
+                                <option value="caloi16">CALOI A16 CECI BRANCA</option>
+                                <option value="poty">POTY A16 Branca/Vermelho</option>
+                                <option value="caloi26">CALOI A26 Sport T19 V21 Marchas</option>
+                            </optgroup>
+                        </select>
+                        <input type="button" name="comprar" value="Comprar">
+                        
+                    </div><div class="fsDirCompras">
+                            <textarea type="text" id="listacompras" name="listacompras"></textarea>
+                            <div class="wrap"><label>Valor: </label><input type="text" size="12" class=valor name="valor" value="" readonly></div>
+                        </div>
+                    <fieldset class="dados">
+                        <legend>Dados do cartão:</legend>
+                            <fieldset class="fsEsqCompras">
+                                <legend>Bandeira:</legend>
+                                <div class="sub linhaCompras">
+                                    <label for="bandeira">Visa</label>
+                                    <input type="radio" id="bandeira" name="bandeira" value="Visa" checked>
+                                    <label for="bandeira">Master</label>
+                                    <input type="radio" id="bandeira" name="bandeira" value="Master">
+                                    <label for="bandeira">Amex</label>
+                                    <input type="radio" id="bandeira" name="bandeira" value="Amex">
+                                </div>
+                            </fieldset>
+                        <div class="card linhaCompras">
+                            <label>Validade:</label> 
+                            <input class="numDD" type="number" name="mesvenc" size="2" value="1" min="1" max="12"> / 
+                            <input class="numQD" type="number" name="anovenc" size="4" value="2018" min="2018" max="2026">
+                        </div>
+                        <div class="card linhaCompras">
+                            <label>Número:</label> 
+                            <input class="inpMedio" type="text" name="numcartao" size="16">
+                        </div>
+                    </fieldset>
+                    
+                </fieldset>
+                <div class="linhaCompras">
+                    <div class="botoes">
+                        <input type="submit" name="enviar" value="Enviar">
+                        <input type="reset" name="limpar" value="Limpar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

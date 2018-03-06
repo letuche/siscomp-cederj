@@ -1,4 +1,4 @@
-/* Estilo básico */
+/* Estilo global e Home */
 body {
     background-color: #EEEE33;
     color: #DD0000;
@@ -47,7 +47,7 @@ img.imgLogo {
     text-align: center;
     font-size: 18px;
 }
-/* Estilo da página Peças */
+/* Estilos da página Peças (lista) */
 .listaPecas {
     color: #000066;
     list-style-type: upper-roman;
@@ -60,7 +60,7 @@ img.imgLogo {
     color: #FF0000;
     font-weight: bold;
 }
-/* Estilo da página Bicicletas */
+/* Estilo da página Bicicletas (catálogo de produtos) */
 .tabBike {
     border-collapse: collapse;
     margin-top: 6px;
@@ -99,7 +99,10 @@ img.imgLogo {
     width: 70px;
     height: 70px;
 }
-/* Estilo da página de cadastro */
+/* Estilos do formulário de cadastro */
+form#cadastro {
+    width: 480px;
+}
 form h3 {
     color: #000066;
     font-weight: bold;
@@ -111,9 +114,8 @@ form h3 {
 }
 fieldset {
     margin: 20px 10px 0px 10px;
-    width: 480px;
 }
-textarea {
+textarea#endereco {
 	width: 370px;
 	height: 50px;
 }
@@ -121,13 +123,13 @@ fieldset.fsEsq {
     float: left;
     display: inline;
     margin: 0px;
-    width: auto;
+    width: 200px;
 }
 fieldset.fsDir {
     float: right;
     display: inline;
     margin: 0px;
-    width: auto;
+    width: 220px;
 }
 .sub.divLinha {
     display: inline;
@@ -156,4 +158,54 @@ fieldset.fsDir {
 }
 .numQD {
     width: 50px;
+}
+/* Estilos do formulário de compras */
+form#compras {
+    width: 500px;
+    display: inline-block;
+}
+.linhaCompras {
+    width: 500px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+.inpEmail {
+    width: 200px;
+}
+fieldset.fsEsqCompras {
+    float: left;
+    display: inline;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+fieldset.dados {
+    display: inline-grid;
+}
+div.fsDirCompras {
+    float: right;
+	display: inline-grid;
+    margin: -15px 0px 0px 0px;
+	height: 220px;
+}
+textarea#listacompras {
+	width: 150px;
+    height: 200px;
+    float: right;
+}
+.sub.linhaCompras {
+    display: inline;
+}
+.card.linhaCompras {
+    display: inline-block;
+    width: 250px;
+}
+.wrap {
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

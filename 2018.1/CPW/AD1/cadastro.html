@@ -25,7 +25,7 @@
             </ul>
         </nav>
         <section>    
-            <form method="post" action="mailto:lmonteiro@id.uff.br">
+            <form id="cadastro" method="post" action="mailto:lmonteiro@id.uff.br">
                 <h3>Cadastro</h3>
                 <fieldset>
                     <legend>Identificação</legend>
@@ -36,8 +36,10 @@
                     <div class="divLinha">
                         <label class="colPri" for="senha">Senha: </label>
                         <input class="inpMedio" type="password" id="senha" name="senha">
-                        <label for="confirme" style="margin-left:28px;">Confirme: </label>
-                        <input class="elemDir inpMedio" type="password" id="confirme" name="confsenha">
+                        <div class="elemDir">
+                            <label for="confirme" style="margin-left:22px;">Confirme: </label>
+                            <input class="inpMedio" type="password" id="confirme" name="confsenha">
+                        </div>
                     </div>
                 </fieldset>                
                 <fieldset>
@@ -53,8 +55,10 @@
                     <div class="divLinha">
                         <label class="colPri" for="tel">Telefone: </label>
                         <input class="inpMedio" type="tel" id="tel" name="telefone">
-                        <label for="cel" style="margin-left:30px;">Celular: </label>
-                        <input class="elemDir inpMedio" type="tel" id="cel" name="celular">
+                        <div class="elemDir">
+                            <label for="cel" style="margin-left:30px;">Celular: </label>
+                            <input class="inpMedio" type="tel" id="cel" name="celular">
+                        </div>
                     </div>
                     <fieldset class="fsEsq">
                         <legend>Nascimento:</legend>

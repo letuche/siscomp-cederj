@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pedalarte</title>
+        <meta charset="utf-8">
+        <base target="_blank">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header>
+            <img class="imgLogo" src="img/PedalarTopo.png">                    
+            <address class="ender">
+                Av. Tour de France, 1903<br>
+                Tel: (21) 8765-4321<br>
+                <a href="mailto:contato@pedalarte.com.br">contato@pedalarte.com.br</a>
+            </address>
+        </header>        
+        <nav>
+            <ul>
+                <li><a href="main.html">Apresentação</a></li>
+                <li><a href="pecas.html">Peças</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="compras.html">Compras</a></li>
+            </ul>
+        </nav>
+        <section>    
+            <form method="post" action="mailto:lmonteiro@id.uff.br">
+                <h3>Cadastro</h3>
+                <div class="divLinha">
+                    <fieldset>
+                        <legend>Identificação</legend>
+                        <label class="colPri" for="email">E-mail: </label>
+                        <input class="inpGrande" type="email" id="email" name="email"><br><br>
+                        <label class="colPri" for="senha">Senha: </label>
+                        <input class="inpMedio" type="password" id="senha" name="senha">
+                        <label for="confirme" style="margin-left:28px;">Confirme: </label>
+                        <input class="elemDir inpMedio" type="password" id="confirme" name="confsenha">
+                    </fieldset>
+                </div>
+                <div class="divLinha">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>                        
+                        <label class="colPri" for="nome">Nome: </label>
+                        <input class="inpGrande" type="text" id="nome" name="nome"><br><br>
+                        <label class="colPri" for="endereco">Endereço: </label>
+                        <textarea type="text" id="endereco" name="endereco"></textarea><br><br>
+                        <label class="colPri" for="tel">Telefone: </label>
+                        <input class="inpMedio" type="tel" id="tel" name="telefone">
+                        <label for="cel" style="margin-left:30px;">Celular: </label>
+                        <input class="elemDir inpMedio" type="tel" id="cel" name="celular"><br><br>
+                        <fieldset class="fsEsq">
+                            <legend>Nascimento:</legend>
+                            <input class="numDD" type="number" name="dianasc" size="2" min="01" max="31"> / 
+                            <input class="numDD" type="number" name="mesnasc" size="2" min="01" max="12"> / 
+                            <input class="numQD" type="number" name="anonasc" size="4" value="1980" min="1920" max="2000">
+                        </fieldset>
+                        <fieldset class="fsDir">
+                            <legend>Sexo:</legend>
+                            <label for="sexo">Masculino</label>
+                            <input type="radio" id="sexo" name="sexo" value="Masculino" checked>
+                            <label for="sexo">Feminino</label>
+                            <input type="radio" id="sexo" name="sexo" value="Feminino">
+                        </fieldset>
+                    </fieldset>
+                    <div class="botoes">
+                        <input type="submit" name="enviar" value="Enviar">
+                        <input type="reset" name="limpar" value="Limpar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

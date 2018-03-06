@@ -3,7 +3,7 @@ body {
     background-color: #EEEE33;
     color: #DD0000;
     font-size: 16px;
-    font-family: Verdana, Liberation;
+    font-family: "Verdana, Liberation", sans-serif;
 }
 a:link {
     color: #DD0000;
@@ -66,7 +66,7 @@ img.imgLogo {
     margin-top: 6px;
     background-color: #FFCC44;
     color: #000066;
-    font-family: Arial, Ubuntu;
+    font-family: "Arial, Ubuntu", sans-serif;
 }
 .tabBike td, th {
     border: 3px solid #226699;
@@ -98,4 +98,59 @@ img.imgLogo {
 .tabBike img {
     width: 70px;
     height: 70px;
+}
+/* Estilo da página de cadastro */
+form h3 {
+    color: #000066;
+    font-weight: bold;
+}
+fieldset {
+    margin: 20px 10px 0px 10px;
+    width: 480px;
+}
+textarea {
+	width: 370px;
+	height: 50px;
+}
+fieldset.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px;
+    width: auto;
+}
+fieldset.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px;
+    width: auto;
+}
+div.divLinha {
+    width: 480px;
+    /* height: 25px; */
+    margin-bottom: 6px;
+}
+.botoes {
+    text-align: right;
+    margin: 20px -32px 0px 10px;
+}
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+.elemDir {
+    float: right;
+    display: block;
+}
+.inpGrande {
+    width: 370px;
+}
+.inpMedio {
+    width: 120px;
+}
+.numDD {
+    width: 30px;
+}
+.numQD {
+    width: 50px;
 }
